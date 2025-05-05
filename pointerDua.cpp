@@ -1,13 +1,10 @@
-#include <iostream>
-using namespace std;
 
-class mahasiswa
+
+int main()
 {
-public:
-    int nim;
-    void showNim()
-    {
-        cout << "no Induk = " << nim << endl;
-    }
-};
-
+    mahasiswa *mhs = new mahasiswa {1};
+    mhs->nim = 2;
+    mhs->showNim();
+    delete mhs;
+    return 0;
+}
