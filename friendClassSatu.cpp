@@ -1,14 +1,12 @@
-#include <iostream>
-#include <string>
-using namespace std;
 
-class siswa;
-class orang
+
+class siswa
 {
 private:
-    string nama;
+    int id;
 
 public:
-    void setNama(string pNama);
-    friend class siswa;
+    void setId(int pId);
+    void displayALL(orang &a);
 };
+
