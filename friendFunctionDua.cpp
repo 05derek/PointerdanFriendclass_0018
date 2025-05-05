@@ -1,19 +1,15 @@
-#include <iostream>
-using namespace std;
 
-class pelajar;
-class manusia 
+
+
+void manusia :: showNilaiPelajar(pelajar &x)
 {
-public:
-    void showNilaiPelajar(pelajar &x);
-};
+    cout << x.nilai;
+}
 
-class pelajar
+int main()
 {
-private:
-    int nilai;
-
-public:
-    pelajar() { nilai = 100; }
-    friend void manusia :: showNilaiPelajar(pelajar &x);
-};
+    manusia budi;
+    pelajar pBudi;
+    budi.showNilaiPelajar(pBudi);
+    return 0;
+}
